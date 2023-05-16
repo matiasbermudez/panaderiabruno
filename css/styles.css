@@ -2,14 +2,13 @@
     margin: 0;
     padding: 0;
     max-width: 100%;
+    box-sizing: border-box;
 }
-
 body{
     font-family: 'EB Garamond', serif;
     max-width: 100%;
     min-width: 500px;
 }
-
 h1{
     font-family: 'Satisfy', cursive; 
     text-decoration: underline;
@@ -18,29 +17,15 @@ h1{
     font-size: 70px;
     margin-bottom: 30px;
 }
-
-
 h2{
     font-family: 'Satisfy', cursive; 
     text-decoration: underline;
     color: #c2185b;
 }
-
 img{
     max-width: 100%;
 }
-
 /*-------- HEADER -------------*/
-
-header{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 5px;
-    background-image: url(../img/fondoHEADER.jpg);
-    background-size: cover;
-}
-
 @media (min-width: 768px) {
     header{
         flex-direction: row;
@@ -48,10 +33,6 @@ header{
         top: 0;
     }
 }
-
-
-
-
 .logoHeader{
     max-width: 20vh;
     min-width: 50px;
@@ -59,52 +40,38 @@ header{
     justify-content: space-around;
     align-items: center;
 }
-
-nav{
-    width: 85%;
-    justify-content:space-around;
-    align-items: center;
+nav {
+    padding:0 !important;
+    font-size: 2rem;
+    background-image: url(../img/fondoHEADER.jpg) !important;
 }
-
-.padreNavegacion{
-    list-style-type: none;
-    font-family: 'Satisfy', cursive; 
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    
+nav a{
+    color: #c2185b !important;
+    text-shadow: 5px 2px 6px black;
 }
-
-@media (min-width: 768px){
-    .padreNavegacion {
-        flex-direction: row;
+nav a:hover{
+    color:black !important;
+    text-shadow: 1px 1px 1px #c2185b;
+}
+.navbar-toggler-icon {
+    width: 7vh;
+    height: 7vh;
+}
+@media (min-width: 992px) {
+    .navbar-collapse{
+        justify-content: center;
     }
 }
-.padreNavegacion li a{
-    
-    align-items: center;
-    font-size: 2rem;
-    color: black;
-    text-decoration:dashed;
-    text-shadow: 1px 1px 3px #c2185b;
-}
-
 /*-------------------------------------------------*/
 
 /*--------------------INDEX-------------------------*/
-
 .seccionPresentacion {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-   
+    gap: 30px; 
 }
-
 #imgPresentacion {
     height: 40vh;
     width: 100%;
@@ -113,7 +80,6 @@ nav{
     background-size: contain;
     background-position: center; 
 }
-
 @media (min-width: 768px) {
     .seccionPresentacion{
         display:grid;
@@ -127,7 +93,6 @@ nav{
     #imgPresentacion {
         grid-area: img;
         background-size: cover;
-        
     }
     .seccionPresentacion p {
         align-self: start;
@@ -145,15 +110,12 @@ nav{
     text-shadow: 1px 1px 1px black;
     grid-area: h2;
 }
-
 #mainIndex {
     display: grid;
     grid-template-rows:  repeat(3,1fr);
-    
     margin-top: 7vh;
     margin-bottom: 7vh;
 }
-
 @media (min-width: 768px) {
     .contenedor {
         display: grid;
@@ -172,25 +134,19 @@ nav{
     .contenedor_articulo2 p {
         grid-area: txt;
     }
-
     .contenedor img{
         max-width: 50%;
         min-width: 50%;
     }
 }
-
 .contenedor img{
     max-width: 100%;
     min-width: 100%;
-    height: 250px;
-    
+    height: 250px; 
 }
-
-
 .texto{
     margin-top: 0px;
 }
-
 .texto h2 {
     text-align: center;
     color: #c2185b;
@@ -198,25 +154,21 @@ nav{
     text-decoration: none;
     font-size: 2rem;
     width: 100%;
-    height: 20px;
-    
+    height: 20px; 
+    margin-top: 3vh;
 }
-
 .texto p {
     text-align: center;
     margin: 50px;
 }
-
 /*-------------------------------------------------*/
 
 /*------- COMIENZOS-------------*/
-
 .h2Comienzos{
     width: 100%;
     font-size: 6vh;
     text-align: center;
     text-shadow: 1px 1px 1px black;
-
 }
 .mainComienzos{
     Margin: 10px 100px;
@@ -225,7 +177,6 @@ nav{
 .mainComienzos p {
     font-size: 2.5vh;
 }
-
 .mainComienzos img{
     max-width: 500px;
     min-width: 450px;
@@ -253,9 +204,7 @@ input{
     border-color: #c2185b;
     border-radius: 10px;
     border-width: 2px;
-    
 }
-
 textarea{
     border-color: #c2185b;
     border-radius: 10px;
@@ -264,67 +213,69 @@ textarea{
     border-width: 2px;
     display: block;  
 }
-
 .fondoContacto{
-    background-image: url(../img/fondo3.jpg) ;
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)), url(../img/fondo3.jpg) ;
     background-position: center;
     background-size: cover;
-   
 }
 form input{
     display: block; 
-    } 
+} 
+label {
+        color: #c2185b;
+        font-size: large;
+        text-shadow: 1px 1px 0.5px black;
+      }
 /*-------------------------------------------------*/
-
 /*-------UBICACION----------------*/
 .txtubicacion img{
     max-width: 10%;
     max-height: 10%;
     width: 4vh;
 }
-
 .txtubicacion{
     color:  #c2185b;
     align-items: left;
 }
 
-.h2Ubicacion{  
+.sectionUbicacion h2{  
     width: 100%;
     font-size: 5vh;
     text-align: center;
     color:  #c2185b;
     text-shadow: 1px 1px 3px black;
 }
-
-label {
-    font-size: large;
-    text-shadow: 1px 1px 3px #c2185b;
+.iframeUbicacion {
+    display:flex;
+}
+.sectionUbicacion {
+    background-position: center;
+    background-size: cover;
 }
 /*-------------------------------------------------*/
-
 /*-------PRODUCTOS----------------*/
-
 .h2Productos{
     width: 100%;
     font-size: 6vh;
     text-align: center;
     text-shadow: 1px 1px 1px black;
 }
-
 .mainProductos {
     display:grid;
     grid-template-columns: repeat(2,1fr);
     gap: 5vh;
-
 }
-
 .productosPanaderia{
     justify-self: end;
+}
+.productosPanaderia h3{
+    text-align: center;
 }
 .productosPanaderia li,.productosPasteleria li {
     margin: 30px;
     list-style: none;
     
+    text-shadow: 1px 1px 1px #c2185b;
 }
 .productosPanaderia li::before{
     content: '';
@@ -335,7 +286,6 @@ label {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
 }
 .productosPasteleria li::before{
     content: '';
@@ -346,21 +296,17 @@ label {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
 }
-
 .mainProductos h3 {
-    margin: 5px;
-    color:#c2185b;
-    
+    color:#c2185b;  
+    text-shadow: 1px 1px 1px black;
 }
 
-
-
+#carouselExampleAutoplaying img {
+    height: 400px;
+}
 /*-------------------------------------------------*/
-
 /*-------FOOTER-----------*/
-
 footer{
     display: grid;
     background-image: url(../img/fondoHEADER.jpg);
@@ -369,7 +315,6 @@ footer{
     gap: 2vh;
     grid-template-rows: repeat(4,1fr);
 }
-
 .divFooter a , .divFooter__p {
     font-size: 1.3rem;
     display: inline;
@@ -378,13 +323,10 @@ footer{
     text-shadow: 1px 1px 1px black;
     justify-self: center;
 }
-
-
 .divFooter img {
     max-width: 5vh;
     justify-content:space-around;
 }
-
 @media (min-width: 800px) {
     footer {
         grid-template-columns: repeat(3,1fr);
@@ -408,31 +350,24 @@ footer{
         .divFooter4{
             grid-area: rs4;
         
-        }
-    
+        }  
 }
-
 #footer a:hover{
     text-shadow: 2px 2px 1px #c2185b;
     color: black;
     border-color: black;
 }
-
 #footer__link1, #footer__link2{
     background-color: black;
     border-width: 2px;
     border-color: #c2185b ;
     color:#c2185b;
 }
-
 #footer__link1:hover , #footer__link2:hover {
     background-color: #c2185b;
     color: black;
     border-color: black;
-  }
-
-
-
+ }
 /*--------------------------------------------*/
 
 

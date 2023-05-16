@@ -22,25 +22,33 @@
 <body>
     <a name="arriba"></a>
     <!--Header logo a la izquierda, navegadores al centro-->
-    <header>
-        
-        <img src="img/logoaver.png" alt="Logo Panaderia Bruno" class="logoHeader">
-
-            <nav>
-
-                <ul class="padreNavegacion">
-
-                    <li><a href="index.html" >Inicio</a></li>
-                    <li><a href="pages/cominezos.html" >Comienzos</a></li>
-                    <li><a href="pages/productos.html" >Productos</a></li>
-                    <li><a href="pages/ubicacion.html" >Ubicacion</a></li>
-                    <li><a href="pages/contacto.html" >Contacto</a></li>
- 
-                </ul>
-            </nav>
-
-    </header>
-
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid navbar-dark ">
+        <img src="img/logoaver.png" class="logoHeader" alt="Logo Panaderia Bruno">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pages/comienzos.html">Comienzos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pages/productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pages/ubicacion.html">Ubicacion</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pages/contacto.html">Contacto</a>
+            </li>
+        </ul>
+        </div>
+        </div>
+    </nav>
     <!--Texto de presentacion -->
 
     <h1>Panaderia Bruno</h1>

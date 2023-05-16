@@ -22,24 +22,36 @@ rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/S
 </head>
 
 <body>
-        <header><!--Header con sus links y Logo-->
-   
-             <img src="../img/logoaver.png" class="logoHeader" alt="Logo Panaderia Bruno">
-            
-            <nav>
-
-              <ul class="padreNavegacion">
-
-                <li><a href="../index.html" >Inicio</a></li>
-                <li><a href="cominezos.html" >Comienzos</a></li>
-                <li><a href="productos.html" >Productos</a></li>
-                <li><a href="ubicacion.html" >Ubicacion</a></li>
-                <li><a href="contacto.html" >Contacto</a></li>
-
-              </ul>
-        </nav>
-        </header>
-
+  <a name="arriba"></a>
+  <!--Menu Hamburguesa-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+    <div class="container-fluid navbar-dark ">
+      <img src="../img/logoaver.png" class="logoHeader" alt="Logo Panaderia Bruno">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comienzos.html">Comienzos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ubicacion.html">Ubicacion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+        
         <h2 class="h2Productos">Nuestra Mercaderia</h2>
 
     <main class="mainProductos">
@@ -63,7 +75,7 @@ rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/S
       
           <section class="productosPasteleria"> 
                 <h3>Pasteleria</h3>
-                   <ul>
+                    <ul>
                         <li>Tortas</li>
                         <li>Masas finas</li>
                         <li>Masas secas</li>
@@ -78,29 +90,46 @@ rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/S
             </section>
 
     </main>
+    <!--CARRUSEL DE BOOTSTRAP-->
     
+  <div id="carouselExampleAutoplaying" class="carousel slide container" data-bs-ride="carousel">
+      <div class="carousel-inner ">
+    <div class="carousel-item active">
+      <img src="../img/carrousel1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../img/carrousel2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../img/Carrousel3.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
         <!--FOOTER / PIE DE PAGINA-->
         <footer id="footer"> 
 
-          <div class="divFooter divFooter1">
+      <div class="divFooter divFooter1">
+        <img src="../img/iconollamada.png" alt="Icono Telefono" class="iconoContacto">
+        <p class="divFooter__p">(2257) - 462-130</p>
+      </div>
 
-             <img src="../img/iconollamada.png" alt="Icono Telefono" class="iconoContacto">
-             <p class="divFooter__p">(2257) - 462-130</p>
-
-         </div>
-
-          <div class="divFooter divFooter2">
-
-             <img src="../img/iconomail.png" alt="Icono Mail" class="iconoContacto" >
-             <a href="mailto:panaderiabruno@gmail.com">panabruno@gmail.com</a>
-             
-          </div>
+        <div class="divFooter divFooter2">
+          <img src="../img/iconomail.png" alt="Icono Mail" class="iconoContacto" >
+          <a href="mailto:panaderiabruno@gmail.com">panabruno@gmail.com</a>
+        </div>
 
           <div class="divFooter divFooter3">
-
-             <img src="../img/instragram.png" alt="Icono Instram" class="iconoContacto">
-             <a href="https://www.instagram.com/" target="_blank">@PanaBrunoOK</a>
-             
+            <img src="../img/instragram.png" alt="Icono Instram" class="iconoContacto">
+            <a href="https://www.instagram.com/" target="_blank">@PanaBrunoOK</a>
           </div>
 
           <div class="divFooter divFooter4">
