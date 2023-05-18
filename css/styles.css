@@ -169,25 +169,23 @@ nav a:hover{
     text-align: center;
     text-shadow: 1px 1px 1px black;
 }
-.mainComienzos{
+/* /* .mainComienzos{
     Margin: 10px 100px;
 
-}
+} */
 .mainComienzos p {
-    font-size: 2.5vh;
+
 }
 .mainComienzos img{
-    max-width: 500px;
-    min-width: 450px;
     max-height: 400px;
-}
+} 
 /*-------------------------------------------------*/
 
 /*------- CONTACTO -------------*/
 .h2Contacto{
     width: 100%;
     text-align: center;
-    margin-bottom: 3vh;
+    margin-bottom: 3vh ;
     font-size: 6vh;
     text-shadow: 1px 1px 3px white;
 }
@@ -262,7 +260,7 @@ label {
 .mainProductos {
     display:grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 5vh;
+   
 }
 .productosPanaderia{
     justify-self: end;
@@ -271,7 +269,7 @@ label {
     text-align: center;
 }
 .productosPanaderia li,.productosPasteleria li {
-    margin: 30px;
+    margin-bottom: 3vh;
     list-style: none;
     
     text-shadow: 1px 1px 1px #c2185b;
