@@ -1,0 +1,55 @@
+/*-------------------------------------------------*/
+/*-------PRODUCTOS----------------*/
+.h2Productos{
+    margin: 20px;
+    width: 100%;
+    font-size: 6vh;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+}
+.mainProductos {
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.productosPanaderia{
+    justify-self: end;
+
+    h3{
+        text-align: center;
+    }
+}
+.productosPanaderia li,.productosPasteleria li {
+    margin-bottom: 3vh;
+    list-style: none;
+    
+    text-shadow: 1px 1px 1px #c2185b;
+}
+.productosPanaderia li::before{
+    content: '';
+    display: inline-block;
+    width: 3.5vh;
+    height: 3.5vh;
+    background-image: url(../img/panfavicon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.productosPasteleria li::before{
+    content: '';
+    display: inline-block;
+    width: 3.5vh;
+    height: 3.5vh;
+    background-image: url(../img/iconopastel.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.mainProductos h3 {
+    color:#c2185b;  
+    text-shadow: 1px 1px 1px black;
+}
+
+#carouselExampleAutoplaying img {
+    height: 400px;
+    margin-bottom: 20px;
+}

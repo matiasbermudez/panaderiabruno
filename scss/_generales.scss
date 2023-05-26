@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    max-width: 100%;
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: underline;
+    color: #c2185b;
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 30px;
+}
+h2{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: underline;
+    color: #c2185b;
+}
+img{
+    max-width: 100%;
+}
+/*-------- HEADER -------------*/
+@media (min-width: 768px) {
+    header{
+        flex-direction: row;
+        position: sticky;
+        top: 0;
+    }
+}
+.logoHeader{
+    max-width: 20vh;
+    min-width: 50px;
+    padding: 0;
+    justify-content: space-around;
+    align-items: center;
+}
+nav {
+    padding:0 !important;
+    font-size: 2rem;
+    background-image: url(../img/fondoHEADER.jpg) !important;
+    a{
+        color: #c2185b !important;
+        text-shadow: 5px 2px 6px black;
+    }
+    a:hover{
+        color:black !important;
+        text-shadow: 1px 1px 1px #c2185b;
+        transition: all 0.5s ;
+    }
+
+}
+.navbar-toggler-icon {
+    width: 7vh;
+    height: 7vh;
+}
+@media (min-width: 992px) {
+    .navbar-collapse{
+        justify-content: center;
+    }
+}
+
+/*-------------------------------------------------*/
+/*-------FOOTER-----------*/
+footer{
+    display: grid;
+    background-image: url(../img/fondoHEADER.jpg);
+    padding: 1%;
+    justify-content: center;
+    gap: 2vh;
+    grid-template-rows: repeat(4,1fr);
+}
+.divFooter a , .divFooter__p {
+    font-size: 1.3rem;
+    display: inline;
+    text-decoration: none;
+    color: #c2185b;
+    text-shadow: 1px 1px 1px black;
+    justify-self: center;
+}
+.divFooter img {
+    max-width: 5vh;
+    justify-content:space-around;
+}
+@media (min-width: 800px) {
+    footer {
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: 
+        "rs1 rs2 up"
+        "rs3 rs4 up";
+        }
+        .divFooter1{
+            grid-area: rs1;
+        
+        }
+        .divFooter2{
+            grid-area: rs2;
+        
+        }
+        .divFooter3{
+            grid-area: rs3;
+        
+        }
+        .divFooter4{
+            grid-area: rs4;
+        
+        }  
+}
+#footer a:hover{
+    text-shadow: 2px 2px 1px #c2185b;
+    color: black;
+    border-color: black;
+}
+#footer__link1, #footer__link2{
+    background-color: black;
+    border-width: 2px;
+    border-color: #c2185b ;
+    color:#c2185b;
+}
+
+#footer__link1:hover , #footer__link2:hover {
+    background-color: #c2185b;
+    color: black;
+    border-color: black;
+ }
+/*--------------------------------------------*/

@@ -1,0 +1,27 @@
+/*-------------------------------------------------*/
+/*-------UBICACION----------------*/
+.txtubicacion img{
+    max-width: 10%;
+    max-height: 10%;
+    width: 4vh;
+}
+.txtubicacion{
+    color:  #c2185b;
+    align-items: left;
+}
+.iframeUbicacion {
+    display:flex;
+    margin-bottom: 30px;
+}
+.sectionUbicacion {
+    background-position: center;
+    background-size: cover;
+    h2{  
+        margin-top: 20px;
+        width: 100%;
+        font-size: 5vh;
+        text-align: center;
+        color:  #c2185b;
+        text-shadow: 1px 1px 3px black;
+    }
+}
