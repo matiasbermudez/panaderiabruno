@@ -5,7 +5,7 @@
     width: 100%;
     font-size: 6vh;
     text-align: center;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 1px $color__secundario;
 }
 .mainProductos {
     display:grid;
@@ -22,7 +22,7 @@
     margin-bottom: 3vh;
     list-style: none;
     
-    text-shadow: 1px 1px 1px #c2185b;
+    text-shadow: 1px 1px 1px $color__primario;
 }
 .productosPanaderia li::before{
     content: '';
@@ -45,8 +45,8 @@
     background-size: cover;
 }
 .mainProductos h3 {
-    color:#c2185b;  
-    text-shadow: 1px 1px 1px black;
+    color: $color__primario;  
+    text-shadow: 1px 1px 1px $color__secundario;
 }
 
 #carouselExampleAutoplaying img {

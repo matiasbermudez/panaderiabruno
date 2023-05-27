@@ -5,21 +5,19 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Roboto', sans-serif;
     max-width: 100%;
 }
 h1{
-    font-family: 'Roboto', sans-serif;
-    text-decoration: underline;
-    color: #c2185b;
+    font-family: $fuente__principal;
+    font-weight: 900 ;
+    color: $color__primario;
     text-align: center;
     font-size: 70px;
-    margin-bottom: 30px;
+    margin: 30px;
 }
 h2{
-    font-family: 'Roboto', sans-serif;
-    text-decoration: underline;
-    color: #c2185b;
+    font-family: $fuente__principal;
+    color: $color__primario;
 }
 img{
     max-width: 100%;
@@ -44,12 +42,12 @@ nav {
     font-size: 2rem;
     background-image: url(../img/fondoHEADER.jpg) !important;
     a{
-        color: #c2185b !important;
-        text-shadow: 5px 2px 6px black;
+        color: $color__primario !important;
+        text-shadow: 5px 2px 6px $color__secundario;
     }
     a:hover{
-        color:black !important;
-        text-shadow: 1px 1px 1px #c2185b;
+        color: $color__secundario !important;
+        text-shadow: 1px 1px 1px $color__primario;
         transition: all 0.5s ;
     }
 
@@ -78,8 +76,8 @@ footer{
     font-size: 1.3rem;
     display: inline;
     text-decoration: none;
-    color: #c2185b;
-    text-shadow: 1px 1px 1px black;
+    color: $color__primario;
+    text-shadow: 1px 1px 1px $color__secundario;
     justify-self: center;
 }
 .divFooter img {
@@ -112,20 +110,20 @@ footer{
         }  
 }
 #footer a:hover{
-    text-shadow: 2px 2px 1px #c2185b;
-    color: black;
-    border-color: black;
+    text-shadow: 2px 2px 1px  $color__primario;
+    color: $color__secundario;
+    border-color: $color__secundario;
 }
 #footer__link1, #footer__link2{
-    background-color: black;
+    background-color: $color__secundario;
     border-width: 2px;
-    border-color: #c2185b ;
-    color:#c2185b;
+    border-color:  $color__primario ;
+    color: $color__primario;
 }
 
 #footer__link1:hover , #footer__link2:hover {
-    background-color: #c2185b;
-    color: black;
-    border-color: black;
+    background-color:  $color__primario;
+    color: $color__secundario;
+    border-color: $color__secundario;
  }
 /*--------------------------------------------*/

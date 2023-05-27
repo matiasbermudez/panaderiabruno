@@ -6,7 +6,7 @@
     width: 4vh;
 }
 .txtubicacion{
-    color:  #c2185b;
+    color:  $color__primario;
     align-items: left;
 }
 .iframeUbicacion {
@@ -21,7 +21,7 @@
         width: 100%;
         font-size: 5vh;
         text-align: center;
-        color:  #c2185b;
-        text-shadow: 1px 1px 3px black;
+        color:  $color__primario;
+        text-shadow: 1px 1px 3px $color__secundario;
     }
 }

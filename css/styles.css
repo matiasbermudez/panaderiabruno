@@ -6,22 +6,20 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
   max-width: 100%;
 }
 
 h1 {
   font-family: "Roboto", sans-serif;
-  text-decoration: underline;
+  font-weight: 900;
   color: #c2185b;
   text-align: center;
   font-size: 70px;
-  margin-bottom: 30px;
+  margin: 30px;
 }
 
 h2 {
   font-family: "Roboto", sans-serif;
-  text-decoration: underline;
   color: #c2185b;
 }
 

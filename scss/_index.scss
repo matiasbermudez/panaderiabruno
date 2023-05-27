@@ -13,7 +13,7 @@
         align-items: center;
         text-align: center;
         font-size: 3rem;
-        text-shadow: 1px 1px 1px black;
+        text-shadow: 1px 1px 1px $color__secundario;
         grid-area: h2;
     }
 }
@@ -83,7 +83,7 @@
     margin-top: 0px;
     h2 {
         text-align: center;
-        color: #c2185b;
+        color: $color__primario;
         justify-content: center;
         text-decoration: none;
         font-size: 2rem;

@@ -18,12 +18,12 @@ form{
 input{
     padding: 10px;
     margin: 10px;
-    border-color: #c2185b;
+    border-color: $color__primario;
     border-radius: 10px;
     border-width: 2px;
 }
 textarea{
-    border-color: #c2185b;
+    border-color: $color__primario;
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
@@ -39,7 +39,7 @@ form input{
     display: block; 
 } 
 label {
-        color: #c2185b;
+        color: $color__primario;
         font-size: large;
-        text-shadow: 1px 1px 0.5px black;
+        text-shadow: 1px 1px 0.5px $color__secundario;
     }
