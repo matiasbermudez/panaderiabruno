@@ -133,47 +133,57 @@ footer {
 
 /*--------------------------------------------*/
 /*--------------------INDEX-------------------------*/
-.seccionPresentacion {
+.presentacion__Section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 30px;
 }
-.seccionPresentacion p {
+.presentacion__Section p {
+  padding: 20px;
   text-align: center;
   grid-area: p;
+  font-size: 20px;
 }
-.seccionPresentacion h2 {
+.presentacion__Section h2 {
   align-items: center;
   text-align: center;
   font-size: 3rem;
   text-shadow: 1px 1px 1px black;
   grid-area: h2;
 }
+.presentacion__Section p a {
+  text-decoration: none;
+  color: #c2185b;
+}
+.presentacion__Section p a:hover {
+  font-size: 20px;
+  text-shadow: 1px 1px 1px black;
+}
 
-#imgPresentacion {
+#presentacion__Img {
   height: 40vh;
   width: 100%;
   background-image: url(../img/imagen\ introduccion.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 
 @media (min-width: 768px) {
-  .seccionPresentacion {
+  .presentacion__Section {
     display: grid;
     gap: 5px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "h2 img " "p img ";
   }
-  #imgPresentacion {
+  #presentacion__Img {
     grid-area: img;
     background-size: cover;
   }
-  .seccionPresentacion p {
+  .presentacion__Section p {
     align-self: start;
     padding: 0 5vh 0 5vh;
   }
@@ -225,10 +235,13 @@ footer {
   width: 100%;
   height: 20px;
   margin-top: 3vh;
+  text-shadow: 1px 1px 1px black;
 }
 .texto p {
   text-align: center;
   margin: 50px;
+  font-size: 20px;
+  font-style: oblique;
 }
 
 /*-------------------------------------------------*/

@@ -1,13 +1,15 @@
 /*--------------------INDEX-------------------------*/
-.seccionPresentacion {
+.presentacion__Section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 30px; 
     p {
+        padding: 20px;
         text-align: center;
         grid-area: p;
+        font-size: 20px;
     }
     h2 {
         align-items: center;
@@ -16,17 +18,26 @@
         text-shadow: 1px 1px 1px $color__secundario;
         grid-area: h2;
     }
+    p a {
+        text-decoration: none;
+        color: $color__primario;
+    }
+    p a:hover{
+        font-size: 20px;
+        text-shadow: 1px 1px 1px $color__secundario;
+    }
 }
-#imgPresentacion {
+
+#presentacion__Img {
     height: 40vh;
     width: 100%;
     background-image: url(../img/imagen\ introduccion.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center; 
 }
 @media (min-width: 768px) {
-    .seccionPresentacion{
+    .presentacion__Section{
         display:grid;
         gap: 5px;
         grid-template-columns: repeat(2,1fr);
@@ -35,11 +46,11 @@
         "h2 img "
         "p img ";
     }
-    #imgPresentacion {
+    #presentacion__Img {
         grid-area: img;
         background-size: cover;
     }
-    .seccionPresentacion p {
+    .presentacion__Section p {
         align-self: start;
         padding: 0 5vh 0 5vh;
     }
@@ -90,10 +101,13 @@
         width: 100%;
         height: 20px; 
         margin-top: 3vh;
+        text-shadow: 1px 1px 1px $color__secundario;
     }
     p {
         text-align: center;
         margin: 50px;
+        font-size: 20px;
+        font-style: oblique;
     }
     
 }
