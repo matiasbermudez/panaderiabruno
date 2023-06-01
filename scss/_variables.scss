@@ -2,3 +2,9 @@ $color__primario: #c2185b;
 $color__secundario: black;
 $fuente__principal: 'Roboto', sans-serif;
 $fuente__secundaria: 'Montserrat', sans-serif;
+
+@mixin  encabezados {
+    text-align: center;
+    color: $color__primario;
+    text-shadow: 1px 1px 1px $color__secundario;
+}

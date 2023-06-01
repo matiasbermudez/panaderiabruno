@@ -55,12 +55,10 @@
           </div>
         </nav>
 
-
         <!--Contacto por formulario-->
         
-
-      <h2 class="h2Contacto">CONTACTO</h2>
-      
+      <main>
+        <h1 class="h1Contacto">CONTACTO</h1>
       <form action="#"> 
 
             <label for="nya">Nombre y Apellido 
@@ -83,23 +81,41 @@
               <textarea rows="10" cols="50" id="comentario" placeholder="Ingrese su comentario Aqui"></textarea>
             </label>
 
-           <!-- <input type="submit" value="Enviar"> -->
-           <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" id="footer__link2" >Enviar consulta </button>
-            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Panaderia Bruno</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <!-- Modal -->
+        <button type="button" class="btn btn-primary footer__link2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Enviar consulta
+        </button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+          <div class="modal-dialog">
+            <div class="modal-content">
+
+              <div class="modal-header">
+
+                <h5 class="modal-title" id="exampleModalLabel">Panaderia Bruno contacto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
+          
+              </div>
+
+              <div class="modal-body">
+
+                <p class="text-black">Gracias por enviar su consulta, se lo responderemos a la brevedad. Atte: Panaderia Bruno</p>
+                <img src="../img/logoaver.png" alt="Logo de Panaderia Bruno">
+             
+              </div>
+
+              <div class="modal-footer">
+                
+                <button type="button" class="btn btn-secondary footer__link2" data-bs-dismiss="modal">Cerrar</button>
+              
+              </div>
             </div>
-            <div class="offcanvas-body bg-black">
-              <p class="text-white">Gracias por enviar su consulta, se lo responderemos a la brevedad. Atte: Panaderia Bruno</p>
-              <img src="../img/logoaver.png" alt="Logo de Panaderia Bruno">
-            </div>
+          </div>
         </div>
-        </footer>
-        <button class="btn btn-primary" type="reset"  id="footer__link2" >Limpiar Formulario</button>
+
+        <button class="btn btn-primary footer__link2" type="reset" >Limpiar Formulario</button>
 
       </form>
-      
+    </main>
  <!--FOOTER / PIE DE PAGINA-->
  <footer id="footer"> 
 
@@ -131,18 +147,22 @@
      
   </div>
 
-  <a href="#arriba" class="btn btn-dark" role="button" id="footer__link1">Ir arriba</a>
-  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" id="footer__link2" >Copyright©</button>
-          <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-            <div class="offcanvas-header">
+  <a href="#arriba" class="btn btn-dark footer__link1" role="button" >Ir arriba</a>
+  <button class="btn btn-primary footer__link2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" >Copyright©</button>
+        
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            
+          <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Todos los derechos reservados®</h5>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <p>Todos los derechos reservados. Propiedad de Panaderia Bruno 2023.</p>
-              <img src="../img/logoaver.png">
-            </div>
           </div>
+
+          <div class="offcanvas-body">
+              <p>Todos los derechos reservados. Propiedad de Panaderia Bruno 2023.</p>
+              <img src="../img/logoaver.png" alt="Logo panaderia Bruno para offcanvas">
+          </div>
+
+        </div>
 </footer>
  
 

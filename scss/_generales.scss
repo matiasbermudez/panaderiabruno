@@ -1,20 +1,14 @@
 *{
     margin: 0;
     padding: 0;
-    max-width: 100%;
     box-sizing: border-box;
     overflow-x:clip;
-}
-body{
-    max-width: 100%;
 }
 h2{
     font-family: $fuente__principal;
     color: $color__primario;
 }
-img{
-    max-width: 100%;
-}
+
 /*-------- HEADER -------------*/
 @media (min-width: 768px) {
     header{
@@ -107,14 +101,14 @@ footer{
     color: $color__secundario;
     border-color: $color__secundario;
 }
-#footer__link1, #footer__link2{
+.footer__link1, .footer__link2{
     background-color: $color__secundario;
     border-width: 2px;
     border-color:  $color__primario ;
     color: $color__primario;
 }
 
-#footer__link1:hover , #footer__link2:hover {
+.footer__link1:hover , .footer__link2:hover {
     background-color:  $color__primario;
     color: $color__secundario;
     border-color: $color__secundario;
@@ -134,7 +128,6 @@ footer{
         justify-content: center;
         align-items: center;
         margin: 0 auto;
-
     }
 }
 /*--------------------------------------------*/

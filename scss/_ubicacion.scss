@@ -1,5 +1,9 @@
 /*-------------------------------------------------*/
 /*-------UBICACION----------------*/
+.h1Ubicacion{
+    margin: 10px;
+    @include encabezados;
+}
 .txtubicacion img{
     max-width: 10%;
     max-height: 10%;
@@ -12,16 +16,4 @@
 .iframeUbicacion {
     display:flex;
     margin-bottom: 30px;
-}
-.sectionUbicacion {
-    background-position: center;
-    background-size: cover;
-    h2{  
-        margin-top: 20px;
-        width: 100%;
-        font-size: 5vh;
-        text-align: center;
-        color:  $color__primario;
-        text-shadow: 1px 1px 3px $color__secundario;
-    }
 }

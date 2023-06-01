@@ -1,11 +1,10 @@
 /*-------------------------------------------------*/
 /*-------PRODUCTOS----------------*/
-.h2Productos{
+.h1Productos{
     margin: 20px;
     width: 100%;
     font-size: 6vh;
-    text-align: center;
-    text-shadow: 1px 1px 1px $color__secundario;
+    @include encabezados;
 }
 .mainProductos {
     display:grid;

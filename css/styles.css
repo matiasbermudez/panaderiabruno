@@ -1,22 +1,13 @@
 * {
   margin: 0;
   padding: 0;
-  max-width: 100%;
   box-sizing: border-box;
   overflow-x: clip;
-}
-
-body {
-  max-width: 100%;
 }
 
 h2 {
   font-family: "Roboto", sans-serif;
   color: #c2185b;
-}
-
-img {
-  max-width: 100%;
 }
 
 /*-------- HEADER -------------*/
@@ -110,14 +101,14 @@ footer {
   border-color: black;
 }
 
-#footer__link1, #footer__link2 {
+.footer__link1, .footer__link2 {
   background-color: black;
   border-width: 2px;
   border-color: #c2185b;
   color: #c2185b;
 }
 
-#footer__link1:hover, #footer__link2:hover {
+.footer__link1:hover, .footer__link2:hover {
   background-color: #c2185b;
   color: black;
   border-color: black;
@@ -307,17 +298,17 @@ footer {
 
 /*-------------------------------------------------*/
 /*------- COMIENZOS-------------*/
-.h2Comienzos {
+.h1Comienzos {
   margin-top: 20px;
   width: 100%;
   font-size: 6vh;
   text-align: center;
+  color: #c2185b;
   text-shadow: 1px 1px 1px black;
 }
 
 .comienzos__Main img {
   max-height: 400px;
-  margin: auto 0;
 }
 .comienzos__Main p {
   font-family: "Roboto", sans-serif;
@@ -325,24 +316,34 @@ footer {
   margin-top: 10px;
 }
 
-#comienzos__h1 {
-  margin-top: 10px;
-  font-size: 30px;
-  color: black;
-  text-shadow: 1px 3px 1px gray;
+.art3Comienzos {
+  margin-bottom: 30px;
 }
 
 /*-------------------------------------------------*/
 /*------- CONTACTO -------------*/
-.h2Contacto {
+.h1Contacto {
   margin-top: 20px;
   width: 100%;
+  margin: 3vh;
+  font-size: 3em;
   text-align: center;
-  margin-bottom: 3vh;
-  font-size: 6vh;
-  text-shadow: 1px 1px 3px white;
+  color: #c2185b;
+  text-shadow: 1px 1px 1px black;
+  animation: contacto__h1 5s linear 0s infinite;
 }
 
+@keyframes contacto__h1 {
+  0% {
+    text-shadow: 1px 1px 1px white;
+  }
+  50% {
+    text-shadow: 3px 3px 3px #c2185b;
+  }
+  100% {
+    text-shadow: 2px 2px 2px white;
+  }
+}
 form {
   padding: 20px;
   margin: 0 auto;
@@ -383,8 +384,19 @@ label {
   text-shadow: 1px 1px 0.5px black;
 }
 
+.modal-body img {
+  width: 30vh;
+}
+
 /*-------------------------------------------------*/
 /*-------UBICACION----------------*/
+.h1Ubicacion {
+  margin: 10px;
+  text-align: center;
+  color: #c2185b;
+  text-shadow: 1px 1px 1px black;
+}
+
 .txtubicacion img {
   max-width: 10%;
   max-height: 10%;
@@ -401,26 +413,14 @@ label {
   margin-bottom: 30px;
 }
 
-.sectionUbicacion {
-  background-position: center;
-  background-size: cover;
-}
-.sectionUbicacion h2 {
-  margin-top: 20px;
-  width: 100%;
-  font-size: 5vh;
-  text-align: center;
-  color: #c2185b;
-  text-shadow: 1px 1px 3px black;
-}
-
 /*-------------------------------------------------*/
 /*-------PRODUCTOS----------------*/
-.h2Productos {
+.h1Productos {
   margin: 20px;
   width: 100%;
   font-size: 6vh;
   text-align: center;
+  color: #c2185b;
   text-shadow: 1px 1px 1px black;
 }
 
