@@ -56,10 +56,11 @@
         </nav>
 
         <!--Contacto por formulario-->
-        
-      <main>
         <h1 class="h1Contacto">CONTACTO</h1>
-      <form action="#"> 
+      
+        <main class="contacto__Main">
+          
+        <form action="#"> 
 
             <label for="nya">Nombre y Apellido 
               <input type="text" id="nya" placeholder="Ej: Marcos Baterasi">
@@ -85,6 +86,7 @@
         <button type="button" class="btn btn-primary footer__link2" data-bs-toggle="modal" data-bs-target="#exampleModal">
           Enviar consulta
         </button>
+
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
           <div class="modal-dialog">
             <div class="modal-content">
@@ -99,7 +101,7 @@
               <div class="modal-body">
 
                 <p class="text-black">Gracias por enviar su consulta, se lo responderemos a la brevedad. Atte: Panaderia Bruno</p>
-                <img src="../img/logoaver.png" alt="Logo de Panaderia Bruno">
+                <img src="../img/logoaver.png" class="w-75 mt-5 offcanvas__img" alt="Logo de Panaderia Bruno">
              
               </div>
 
@@ -157,9 +159,11 @@
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
 
-          <div class="offcanvas-body">
+          <div class="offcanvas-body" >
+
               <p>Todos los derechos reservados. Propiedad de Panaderia Bruno 2023.</p>
-              <img src="../img/logoaver.png" alt="Logo panaderia Bruno para offcanvas">
+              <img src="../img/logoaver.png" alt="Logo panaderia Bruno para offcanvas" class="w-75 mt-5 offcanvas__img">
+ 
           </div>
 
         </div>

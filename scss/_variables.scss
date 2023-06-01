@@ -8,3 +8,8 @@ $fuente__secundaria: 'Montserrat', sans-serif;
     color: $color__primario;
     text-shadow: 1px 1px 1px $color__secundario;
 }
+
+@mixin centrarimg {
+    display: block;
+    margin: 0 auto;
+}

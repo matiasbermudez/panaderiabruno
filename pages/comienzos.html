@@ -5,17 +5,25 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <!--BOOSTRAP CSS LINK-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" 
   rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  
+  <!--LINK AOS-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
   <!--MI CSS-->
   <link rel="stylesheet" href="../css/styles.css">
+  
   <!--FAVICON-->
   <link rel="icon" type="image/jpg" href="../img/panfavicon.png"/>
+  
   <!--GOOGLE FONTS-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,200&family=Roboto:ital,wght@0,100;0,400;0,500;1,900&display=swap" rel="stylesheet">
+  
   <!--ETIQUETAS SEO-->
   <meta name="description" content="Panaderia Bruno, panaderia, factureria y pasteleria. Nos dedicamos a la 
   elaboracion artesanal. Nuestra historia brevemente contada por sus dueños">
@@ -60,7 +68,7 @@
 
    <main class="comienzos__Main">
     <Article class="art1Comienzos">
-      <div class="container-fluid">
+      <div class="container-fluid" >
       <div class="row">
           <p class="col-12">Dentro del recorrido por Costa Azul, y, entre sus atractivos, nos encontramos con
           la Panadería Bruno, comercio histórico de esta localidad, ubicada en la calle
@@ -71,7 +79,7 @@
           inauguración se produjo en el año 1981. Con el tiempo comienzan a consolidar su familia,
           convirtiéndose en padres de tres hijos: Nestor, Marisa y Feliciano. </p>
         </div>   
-        <div class="row">
+        <div class="row" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
           <img src="../img/Comienzo Panaderia 1.webp" class="col-12 col-xl-6 col-xxl-6" alt="Foto de la Panaderia en sus Comienzos">
           <img src="../img/Comienzos Panaderia2.webp" class="col-12 col-xl-6 col-xxl-6"alt="Foto de la Panaderia en sus Comienzos">
         </div>
@@ -91,7 +99,7 @@
           diferentes lugares del país. </p>
         </div>
      
-        <div class=" row">
+        <div class="row" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
           <img src="../img/Comienzo Barco.webp" class="col-12 col-xl-6 col-xxl-6" alt="Foto del Barco en el que inmigraron los Dueños">
           <img src="../img/Comienzo Certificado inmigrante.webp" class="col-12 col-xl-6 col-xxl-6" alt="Foto del certificado de Inmigracion">
         </div>
@@ -110,7 +118,7 @@
               en base a encuestas populares a los habitantes y veraneantes del lugar.
             </p>
           </div>
-            <div class="row">
+            <div class="row" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <img src="../img/Comienzos Actualidad.webp" class="col-12 col-xl-6 col-xxl-6" alt="Foto del Frente del comercio en 2020">
             <img src="../img/Comienzos Certificado.webp" class="col-12 col-xl-6 col-xxl-6" alt="Certificado primer premio IADOP">
         </div>
@@ -162,15 +170,20 @@
             </div>
             <div class="offcanvas-body">
               <p>Todos los derechos reservados. Propiedad de Panaderia Bruno 2023.</p>
-              <img src="../img/logoaver.png">
+              <img src="../img/logoaver.png" class="w-75 mt-5 offcanvas__img">
             </div>
           </div>
      </footer>
-         
-
   
      <!--BOOSTRAP JS LINK-->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+     <!--AOS JS LINK-->
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+       AOS.init({ duration: 1000,}) ;
+     </script>
+
 </body>
 </html>
