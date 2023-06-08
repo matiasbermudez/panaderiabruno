@@ -429,54 +429,135 @@ label {
   text-shadow: 1px 1px 1px black;
 }
 
-.mainProductos {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+.panaderia__padre, .pasteleria__padre {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.productosPanaderia {
-  justify-self: end;
+.cards {
+  margin: 10px;
+  border-radius: 6px;
+  width: 150;
+  height: 100px;
+  object-fit: cover;
+  background-image: linear-gradient(to bottom, #ffffff, #b9bbbc, #767b7c, #3b413e);
 }
-.productosPanaderia h3 {
-  text-align: center;
+.cards img {
+  width: 130px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
 }
-
-.productosPanaderia li, .productosPasteleria li {
-  margin-bottom: 3vh;
-  list-style: none;
-  text-shadow: 1px 1px 1px #c2185b;
-}
-
-.productosPanaderia li::before {
-  content: "";
-  display: inline-block;
-  width: 3.5vh;
-  height: 3.5vh;
-  background-image: url(../img/panfavicon.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.cards p {
+  display: none;
 }
 
-.productosPasteleria li::before {
-  content: "";
-  display: inline-block;
-  width: 3.5vh;
-  height: 3.5vh;
-  background-image: url(../img/iconopastel.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.cards:hover {
+  height: 200px;
+  transition: 0.5s;
 }
-
-.mainProductos h3 {
+.cards:hover p {
+  margin: 10px 5px 0 5px;
+  display: block;
   color: #c2185b;
   text-shadow: 1px 1px 1px black;
 }
+.cards:hover img {
+  width: 350px;
+}
 
-#carouselExampleAutoplaying img {
-  height: 400px;
-  margin-bottom: 20px;
+#pasteleria__h2 {
+  text-align: center;
+  margin: 40px;
+  font-size: 3rem;
+  text-shadow: 2px 1px 1px black;
+}
+
+@media (min-width: 440px) {
+  .cards {
+    width: 200px;
+    height: 150px;
+  }
+  .cards img {
+    width: 200px;
+    height: 150px;
+  }
+  .cards:hover {
+    height: 300px;
+  }
+  .cards:hover img {
+    width: 200px;
+    height: 150px;
+  }
+}
+@media (min-width: 768px) {
+  .cards {
+    width: 300px;
+    height: 200px;
+  }
+  .cards img {
+    width: 300px;
+    height: 200px;
+  }
+  .cards:hover {
+    height: 300px;
+  }
+  .cards:hover img {
+    width: 300px;
+    height: 200px;
+  }
+}
+@media (min-width: 1200px) {
+  .cards {
+    width: 400px;
+    height: 250px;
+  }
+  .cards img {
+    width: 400px;
+    height: 250px;
+  }
+  .cards:hover {
+    height: 400px;
+  }
+  .cards:hover img {
+    width: 400px;
+    height: 250px;
+  }
+}
+/*SELECTOR DE PRODUCTOS*/
+/* .contenedor__inputs */
+.contenedor__labels {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.contenedor__labels label {
+  cursor: pointer;
+  padding: 8px 15px;
+  background-color: #c2185b;
+  color: black;
+}
+
+#panaderia__label, #pasteleria__label, #todos__label {
+  display: none;
+}
+
+.panaderia__card, .pasteleria__card {
+  display: none;
+}
+
+#panaderia__label:checked ~ .panaderia__padre .panaderia__card,
+#pasteleria__label:checked ~ .pasteleria__padre .pasteleria__card {
+  display: block;
+}
+
+#todos__label:checked ~ .panaderia__padre .panaderia__card,
+#todos__label:checked ~ .pasteleria__padre .pasteleria__card {
+  display: block;
 }
 
 /*# sourceMappingURL=styles.css.map */
