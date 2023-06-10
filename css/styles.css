@@ -414,7 +414,8 @@ label {
 
 .txtubicacion {
   color: #c2185b;
-  align-items: left;
+  align-items: center;
+  text-align: center;
 }
 
 .iframeUbicacion {
