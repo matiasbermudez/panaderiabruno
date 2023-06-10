@@ -5,6 +5,10 @@
   overflow-x: clip;
 }
 
+body {
+  background-image: linear-gradient(to right bottom, #ffffff, #ead8e2, #ddb1af, #bb9371, #7b8042);
+}
+
 h2 {
   font-family: "Roboto", sans-serif;
   color: #c2185b;
@@ -373,12 +377,6 @@ textarea {
   display: block;
 }
 
-.fondoContacto {
-  background-image: linear-gradient(rgb(1, 2, 4), rgba(1, 0, 0, 0.7)), url(../img/fondo3.webp);
-  background-position: center;
-  background-size: cover;
-}
-
 form input {
   display: block;
 }
@@ -391,6 +389,12 @@ label {
 
 .contacto__Main button {
   margin: 10px;
+}
+
+.fondoContacto {
+  background-image: linear-gradient(to right top, #000409, #232426, #404042, #5f5f60);
+  background-position: center;
+  background-size: cover;
 }
 
 /*-------------------------------------------------*/
@@ -429,6 +433,62 @@ label {
   text-shadow: 1px 1px 1px black;
 }
 
+/*SELECTOR DE PRODUCTOS*/
+/* .contenedor__inputs */
+.contenedor__labels {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+.contenedor__labels label {
+  cursor: pointer;
+  padding: 8px 15px;
+  background-image: linear-gradient(to right top, #000409, #232426, #404042, #5f5f60, #808080);
+  color: #c2185b;
+  font-weight: bold;
+  border-radius: 30px;
+}
+
+.contenedor__labels label:hover {
+  background: #c2185b;
+  color: black;
+  padding: 10px 20px;
+}
+
+#panaderia__label, #pasteleria__label, #todos__label {
+  display: none;
+}
+
+.panaderia__card, .pasteleria__card {
+  display: none;
+}
+
+#pasteleria__h2, #panaderia__h2 {
+  display: none;
+}
+
+#panaderia__label:checked ~ .panaderia__padre .panaderia__card,
+#pasteleria__label:checked ~ .pasteleria__padre .pasteleria__card {
+  display: block;
+}
+
+#panaderia__label:checked ~ #panaderia__h2, #pasteleria__label:checked ~ #pasteleria__h2 {
+  display: block;
+}
+
+#todos__label:checked ~ .panaderia__padre .panaderia__card,
+#todos__label:checked ~ .pasteleria__padre .pasteleria__card {
+  display: block;
+}
+
+#todos__label:checked ~ #panaderia__h2,
+#todos__label:checked ~ #pasteleria__h2 {
+  display: block;
+}
+
+/*-------------------*/
 .panaderia__padre, .pasteleria__padre {
   width: 100%;
   display: flex;
@@ -436,16 +496,27 @@ label {
   justify-content: center;
 }
 
+.panaderia__card h3, .pasteleria__card h3 {
+  text-align: center;
+  font-style: italic;
+  color: black;
+  text-shadow: 2px 2px 2px #c2185b;
+}
+.panaderia__card p, .pasteleria__card p {
+  text-align: center;
+  text-shadow: 1px 1px 1px black;
+}
+
 .cards {
   margin: 10px;
   border-radius: 6px;
-  width: 150;
+  width: 140px;
   height: 100px;
   object-fit: cover;
   background-image: linear-gradient(to bottom, #ffffff, #b9bbbc, #767b7c, #3b413e);
 }
 .cards img {
-  width: 130px;
+  width: 140px;
   height: 100px;
   display: block;
   margin: 0 auto;
@@ -455,7 +526,7 @@ label {
 }
 
 .cards:hover {
-  height: 200px;
+  height: 250px;
   transition: 0.5s;
 }
 .cards:hover p {
@@ -464,13 +535,10 @@ label {
   color: #c2185b;
   text-shadow: 1px 1px 1px black;
 }
-.cards:hover img {
-  width: 350px;
-}
 
-#pasteleria__h2 {
+#pasteleria__h2, #panaderia__h2 {
   text-align: center;
-  margin: 40px;
+  margin: 10px;
   font-size: 3rem;
   text-shadow: 2px 1px 1px black;
 }
@@ -485,6 +553,7 @@ label {
     height: 150px;
   }
   .cards:hover {
+    width: 200px;
     height: 300px;
   }
   .cards:hover img {
@@ -502,6 +571,7 @@ label {
     height: 200px;
   }
   .cards:hover {
+    width: 300px;
     height: 300px;
   }
   .cards:hover img {
@@ -519,6 +589,7 @@ label {
     height: 250px;
   }
   .cards:hover {
+    width: 400px;
     height: 400px;
   }
   .cards:hover img {
@@ -526,38 +597,8 @@ label {
     height: 250px;
   }
 }
-/*SELECTOR DE PRODUCTOS*/
-/* .contenedor__inputs */
-.contenedor__labels {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-bottom: 50px;
-}
-
-.contenedor__labels label {
-  cursor: pointer;
-  padding: 8px 15px;
-  background-color: #c2185b;
-  color: black;
-}
-
-#panaderia__label, #pasteleria__label, #todos__label {
-  display: none;
-}
-
-.panaderia__card, .pasteleria__card {
-  display: none;
-}
-
-#panaderia__label:checked ~ .panaderia__padre .panaderia__card,
-#pasteleria__label:checked ~ .pasteleria__padre .pasteleria__card {
-  display: block;
-}
-
-#todos__label:checked ~ .panaderia__padre .panaderia__card,
-#todos__label:checked ~ .pasteleria__padre .pasteleria__card {
-  display: block;
+#carouselExampleAutoplaying img {
+  max-height: 400px;
 }
 
 /*# sourceMappingURL=styles.css.map */

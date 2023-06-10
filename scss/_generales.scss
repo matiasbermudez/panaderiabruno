@@ -4,6 +4,9 @@
     box-sizing: border-box;
     overflow-x:clip;
 }
+body{
+   background-image: linear-gradient(to right bottom, #ffffff, #ead8e2, #ddb1af, #bb9371, #7b8042);
+}
 h2{
     font-family: $fuente__principal;
     color: $color__primario;

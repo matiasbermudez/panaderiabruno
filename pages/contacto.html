@@ -63,57 +63,26 @@
         <form action="#"> 
 
             <label for="nya">Nombre y Apellido 
-              <input type="text" id="nya" placeholder="Ej: Marcos Baterasi">
+              <input type="text" id="nya" placeholder="Ej: Marcos Baterasi" required>
             </label>
 
             <label for="edad">Edad
-              <input type="number" id="edad" placeholder="Ej: 31">
+              <input type="number" id="edad" placeholder="Ej: 31" required>
             </label>
 
             <label for="mail">E-Mail
-              <input type="email" id="mail" placeholder="marcobat91@gmail.com">
+              <input type="email" id="mail" placeholder="marcobat91@gmail.com" required>
             </label>
 
             <label for="telefono">Telefono
-              <input type="tel" id="telefono" placeholder="2257617374">
+              <input type="tel" id="telefono" placeholder="2257617374" required>
             </label>
 
             <label for="comentario">Ingrese su comentario
               <textarea rows="10" cols="50" id="comentario" placeholder="Ingrese su comentario Aqui"></textarea>
             </label>
 
-        <!-- Modal -->
-        <button type="button" class="btn btn-primary footer__link2" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          Enviar consulta
-        </button>
-
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
-          <div class="modal-dialog">
-            <div class="modal-content">
-
-              <div class="modal-header">
-
-                <h5 class="modal-title" id="exampleModalLabel">Panaderia Bruno contacto</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
-          
-              </div>
-
-              <div class="modal-body">
-
-                <p class="text-black">Gracias por enviar su consulta, se lo responderemos a la brevedad. Atte: Panaderia Bruno</p>
-                <img src="../img/logoaver.png" class="w-75 mt-5 offcanvas__img" alt="Logo de Panaderia Bruno">
-             
-              </div>
-
-              <div class="modal-footer">
-                
-                <button type="button" class="btn btn-secondary footer__link2" data-bs-dismiss="modal">Cerrar</button>
-              
-              </div>
-            </div>
-          </div>
-        </div>
-
+        <button class="btn btn-primary footer__link2" type="submit" >Enviar Formulario</button>
         <button class="btn btn-primary footer__link2" type="reset" >Limpiar Formulario</button>
 
       </form>

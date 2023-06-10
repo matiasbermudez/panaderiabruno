@@ -6,22 +6,86 @@
     font-size: 6vh;
     @include encabezados;
 }
+/*SELECTOR DE PRODUCTOS*/
+
+/* .contenedor__inputs */
+
+.contenedor__labels {
+    display:flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.contenedor__labels label{
+    cursor: pointer;
+    padding: 8px 15px;
+    background-image: linear-gradient(to right top, #000409, #232426, #404042, #5f5f60, #808080);
+    color: $color__primario ;
+    font-weight: bold;
+    border-radius: 30px;
+}
+.contenedor__labels label:hover{
+    background: $color__primario;
+    color: $color__secundario;
+    padding: 10px 20px;
+}
+#panaderia__label, #pasteleria__label, #todos__label{
+    display: none;
+}
+
+.panaderia__card, .pasteleria__card {
+    display: none;
+} 
+#pasteleria__h2 ,#panaderia__h2 {
+    display:none;
+}
+
+#panaderia__label:checked ~ .panaderia__padre .panaderia__card, 
+#pasteleria__label:checked ~ .pasteleria__padre .pasteleria__card {
+    display: block;
+}
+#panaderia__label:checked ~ #panaderia__h2, #pasteleria__label:checked ~ #pasteleria__h2 {
+    display: block;
+}
+#todos__label:checked ~ .panaderia__padre .panaderia__card, 
+#todos__label:checked ~ .pasteleria__padre .pasteleria__card {
+    display: block;
+}
+#todos__label:checked ~ #panaderia__h2, 
+#todos__label:checked ~ #pasteleria__h2 {
+    display: block;
+}
+/*-------------------*/
 .panaderia__padre, .pasteleria__padre {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.panaderia__card , .pasteleria__card {
+    h3{
+    text-align: center;
+    font-style: italic;
+    color: $color__secundario;
+    text-shadow: 2px 2px 2px $color__primario;
+    }
+    p{
+        text-align: center;
+        text-shadow: 1px 1px 1px $color__secundario;
+    }
+}
 .cards {
     margin: 10px;
     border-radius: 6px;
-    width: 150;
+    width: 140px;
     height: 100px;
     object-fit: cover;
     background-image: linear-gradient(to bottom, #ffffff, #b9bbbc, #767b7c, #3b413e);
     
     img {
-        width: 130px;
+        width: 140px;
         height: 100px;
         @include centrarimg;
     }
@@ -31,23 +95,20 @@
         
 }
 
-.cards:hover {
-    height: 200px;
-    transition: 0.5s;
 
+.cards:hover {
+    height: 250px;
+    transition: 0.5s;
     p{
         margin: 10px 5px 0 5px;
         display: block;
         color: $color__primario;
         text-shadow: 1px 1px 1px $color__secundario;
     }
-    img{
-        width: 350px;
-    }
 }
-#pasteleria__h2{
+#pasteleria__h2 ,#panaderia__h2 {
     text-align: center;
-    margin: 40px;
+    margin: 10px;
     font-size: 3rem;
     text-shadow: 2px 1px 1px $color__secundario;
 
@@ -63,6 +124,7 @@
         }
     }
     .cards:hover {
+    width: 200px;
     height: 300px;
     img {
         width: 200px;
@@ -82,6 +144,7 @@
         }
     }
     .cards:hover {
+    width: 300px;
     height: 300px;
     img {
         width: 300px;
@@ -101,6 +164,7 @@
         }
     }
     .cards:hover {
+    width: 400px;
     height: 400px;
     img {
         width: 400px;
@@ -108,37 +172,6 @@
     }
     }
 } 
-
-/*SELECTOR DE PRODUCTOS*/
-
-/* .contenedor__inputs */
-
-.contenedor__labels {
-    display:flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 50px;
+#carouselExampleAutoplaying img {
+    max-height: 400px;
 }
-
-.contenedor__labels label{
-    cursor: pointer;
-    padding: 8px 15px;
-    background-color: $color__primario;
-    color: $color__secundario
-}
-#panaderia__label, #pasteleria__label, #todos__label{
-    display: none;
-}
-
-.panaderia__card, .pasteleria__card {
-    display: none;
-} 
-#panaderia__label:checked ~ .panaderia__padre .panaderia__card, 
-#pasteleria__label:checked ~ .pasteleria__padre .pasteleria__card {
-    display: block;
-}
-#todos__label:checked ~ .panaderia__padre .panaderia__card, 
-#todos__label:checked ~ .pasteleria__padre .pasteleria__card {
-    display: block;
-}
-

@@ -36,11 +36,7 @@ textarea{
     border-width: 2px;
     display: block;  
 }
-.fondoContacto{
-    background-image: linear-gradient(rgba(1, 2, 4, 1), rgba(1, 0, 0, 0.7)), url(../img/fondo3.webp) ;
-    background-position: center;
-    background-size: cover;
-}
+
 form input{
     display: block; 
 } 
@@ -51,4 +47,10 @@ label {
     }
 .contacto__Main button{
     margin: 10px;
+}
+
+.fondoContacto{
+    background-image: linear-gradient(to right top, #000409, #232426, #404042, #5f5f60);
+    background-position: center;
+    background-size: cover;
 }
